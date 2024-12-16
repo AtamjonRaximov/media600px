@@ -1,0 +1,66 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container {
+  max-width: (1200px 100%);
+  margin-inline: auto;
+}
+.child1 {
+  width: 400px;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  h1 {
+    color: rgb(54, 197, 130);
+  }
+  h2 {
+    color: greenyellow;
+  }
+  p {
+    color: gray;
+  }
+}
+.child {
+  width: 400px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  h1 {
+    color: rgb(255, 255, 255);
+  }
+  h2 {
+    color: rgb(255, 255, 255);
+  }
+  p {
+    color: rgb(255, 253, 253);
+  }
+  button {
+    background-color: green;
+    color: #ffff;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    width: 75%;
+  }
+}
+
+@media (min-width: 650px) {
+  .child1 {
+    width: 100%;
+  }
+  .about {
+    display: flex;
+    width: 100%;
+    .child {
+      width: 100%;
+    }
+  }
+}
